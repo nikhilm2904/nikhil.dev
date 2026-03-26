@@ -1,2 +1,0 @@
-# nikhil.dev
-Potfolio Website
