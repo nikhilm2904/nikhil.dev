@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil.Dev</title>
+  <meta name="description" content="Salesforce Developer Portfolio — Apex, LWC, Flow & Automation Expert" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ===== OVERLAY ===== -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo">
+      <i class="fab fa-salesforce" style="color:var(--sf-blue);font-size:1.4rem;"></i>
+      Nikhil<span>.</span>dev
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Right controls -->
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+      <a href="resume.pdf" class="btn btn-primary btn-sm" download>
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MOBILE NAV ===== -->
+<nav id="mobile-nav">
+  <a href="#hero">🏠 Home</a>
+  <a href="#about">👤 About</a>
+  <a href="#projects">🚀 Projects</a>
+  <a href="#certifications">🏆 Certifications</a>
+  <a href="#contact">📬 Contact</a>
+  <a href="resume.pdf" download style="color:var(--primary);margin-top:1rem;">
+    <i class="fas fa-download"></i> Download Resume
+  </a>
+</nav>
+
+<!-- ===================================================
+     HERO SECTION
+===================================================== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="hero-container container">
+    <!-- Left -->
+    <div class="hero-left">
+      <!-- Badge -->
+      <div class="hero-badge" data-reveal>
+        <i class="fas fa-circle" style="color:var(--green);font-size:.5rem;"></i>
+        <span id="rotating-badge">🚀 Open to Work</span>
+      </div>
+
+      <!-- Name -->
+      <h1 class="hero-name" data-reveal data-delay="100">
+        Hi, I'm <span class="grad">Nikhil M</span>
+      </h1>
+
+      <!-- Typewriter -->
+      <div class="hero-role-line" data-reveal data-delay="200">
+        <i class="fab fa-salesforce" style="color:var(--sf-blue);"></i>
+        <span id="typewriter-text"></span>
+      </div>
+
+      <!-- Tagline -->
+      <p class="hero-tagline" data-reveal data-delay="300">
+        I build powerful Salesforce solutions — from Apex triggers to Lightning Web
+        Components — that streamline business processes and drive real results.
+      </p>
+
+      <!-- CTA -->
+      <div class="hero-btns" data-reveal data-delay="400">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="resume.pdf" class="btn btn-outline" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" data-reveal data-delay="500">
+        <div class="stat-item">
+          <span class="stat-num" data-counter="3" data-suffix="+">0</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-counter="30" data-suffix="+">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-counter="5" data-suffix="x">0</span>
+          <span class="stat-label">Certified</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-counter="98" data-suffix="%">0</span>
+          <span class="stat-label">Client Sat.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right card -->
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-avatar">⚡</div>
+        <div class="hero-card-name">Nikhil M</div>
+        <div class="hero-card-role">Salesforce Developer · 3 yrs</div>
+        <div class="hero-card-skills">
+          <span class="skill-pill">Apex</span>
+          <span class="skill-pill">LWC</span>
+          <span class="skill-pill">SOQL</span>
+          <span class="skill-pill">Flows</span>
+          <span class="skill-pill">REST API</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">SFDX</span>
+        </div>
+        <div class="cert-badges">
+          <span class="cert-badge-mini">Admin</span>
+          <span class="cert-badge-mini">AI Associate</span>
+          <span class="cert-badge-mini">App Builder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     ABOUT SECTION
+===================================================== -->
+<section id="about">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">Who I Am</span>
+      <h2>About Me</h2>
+      <p>Passionate about the Salesforce ecosystem and clean, scalable code.</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Photo -->
+      <div class="about-photo-wrap" data-reveal="left">
+        <div class="about-photo">🧑‍💻</div>
+        <div class="about-exp-badge">
+          <strong>3+</strong>Years of<br>Experience
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content" data-reveal="right">
+        <h2>Salesforce Developer &amp;<br>Cloud Solutions Architect</h2>
+        <p>
+          I'm a results-driven Salesforce Developer with 3+ years of experience designing and
+          implementing CRM solutions across Sales Cloud, Service Cloud, and Experience Cloud.
+          I specialize in Apex, Lightning Web Components, and Process Automation to build
+          scalable, high-performance applications that solve real business challenges.
+        </p>
+
+        <!-- Tabs -->
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="skills">Skills</button>
+          <button class="tab-btn" data-tab="experience">Experience</button>
+          <button class="tab-btn" data-tab="education">Education</button>
+        </div>
+
+        <!-- ===== Skills Tab ===== -->
+        <div class="tab-pane active" id="tab-skills">
+          <!-- Salesforce -->
+          <div class="skill-group">
+            <div class="skill-group-title"><i class="fab fa-salesforce"></i> Salesforce Platform</div>
+            <div class="skill-item">
+              <span class="skill-name">Apex &amp; Triggers</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="92"></div></div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Lightning Web Comp.</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SOQL / SOSL</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Flow &amp; Automation</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+          <!-- Web -->
+          <div class="skill-group">
+            <div class="skill-group-title"><i class="fas fa-code"></i> Web Technologies</div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript / TS</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML &amp; CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+              <span class="skill-pct">82%</span>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="skill-group">
+            <div class="skill-group-title"><i class="fas fa-tools"></i> Tools &amp; DevOps</div>
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Salesforce CLI</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="86"></div></div>
+              <span class="skill-pct">86%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-fill" data-level="94"></div></div>
+              <span class="skill-pct">94%</span>
+            </div>
+          </div>
+        </div><!-- /skills tab -->
+
+        <!-- ===== Experience Tab ===== -->
+        <div class="tab-pane" id="tab-experience">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-period">2023 — Present</div>
+              <div class="timeline-title">Salesforce Developer</div>
+              <div class="timeline-company">Tata Consultancy Services · Full-time</div>
+              <ul>
+                <li>Architected and delivered CPQ implementation reducing quote-to-cash cycle by 40%.</li>
+                <li>Built 15+ LWC components integrated with third-party REST APIs.</li>
+                <li>Led Apex code review process and enforced best practices across team of 8 devs.</li>
+                <li>Automated 30+ business workflows using Record-Triggered Flows.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-period">2023 — 2023</div>
+              <div class="timeline-title">Web Developer / Platform Engineer</div>
+              <div class="timeline-company">Sanjeev Technologies · Full-time</div>
+              <ul>
+                <li>Built and deployed e-commerce platforms with secure payment integrations.</li>
+                <li>Integrated APIs and automated workflows for reliable system performance.</li>
+                <li>Collaborated with marketing teams to improve lead generation and conversions.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-period">2022 — 2023</div>
+              <div class="timeline-title">Associate Researcher</div>
+              <div class="timeline-company">Saint Petersburg State University · Part-time</div>
+              <ul>
+                <li>Conducted research on co-evolutionary hybrid intelligence for emotion recognition.</li>
+                <li>Published paper on eye emotion recognition using Haar Classifier (FRUCT Conference).</li>
+                <li>Developed and validated machine learning-based recognition approaches.</li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /experience tab -->
+
+        <!-- ===== Education Tab ===== -->
+        <div class="tab-pane" id="tab-education">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div>              
+              <div class="edu-degree">B.E — Information Science &amp; Engineering</div>
+              <div class="edu-inst">Visvesvaraya Technological University · GPA 8.7</div>
+            </div>
+          </div>          
+        </div><!-- /education tab -->
+
+      </div><!-- /about-content -->
+    </div><!-- /about-grid -->
+  </div>
+</section>
+
+<!-- ===================================================
+     PROJECTS SECTION
+===================================================== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">My Work</span>
+      <h2>Featured Projects</h2>
+      <p>A selection of Salesforce and web projects I've built or contributed to.</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="projects-filter" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="lwc">LWC</button>
+      <button class="filter-btn" data-filter="apex">Apex</button>
+      <button class="filter-btn" data-filter="flow">Flow</button>
+      <button class="filter-btn" data-filter="integration">Integration</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-category="lwc" data-reveal data-delay="0">
+        <div class="project-thumb">
+          <span class="project-icon">⚡</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag tag-lwc">LWC</span>
+            <span class="project-tag tag-apex">Apex</span>
+            <span class="project-tag tag-api">REST API</span>
+          </div>
+          <div class="project-title">Smart Lead Scoring Dashboard</div>
+          <p class="project-desc">
+            A real-time LWC dashboard that uses Apex to score incoming leads via a machine-learning
+            REST API, displaying ranked prospects with automated follow-up task creation.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-category="apex" data-reveal data-delay="100">
+        <div class="project-thumb">
+          <span class="project-icon">🔄</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag tag-apex">Apex</span>
+            <span class="project-tag tag-integration">Integration</span>
+          </div>
+          <div class="project-title">ERP ↔ Salesforce Data Sync</div>
+          <p class="project-desc">
+            Bidirectional data sync between SAP ERP and Salesforce using Apex REST callouts,
+            custom metadata for field mapping, and robust error handling with retry logic.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-category="flow" data-reveal data-delay="200">
+        <div class="project-thumb">
+          <span class="project-icon">🌊</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag tag-flow">Flow</span>
+            <span class="project-tag tag-apex">Apex</span>
+          </div>
+          <div class="project-title">Automated Quote Approval Engine</div>
+          <p class="project-desc">
+            Multi-level approval workflow using Screen Flows and Apex-invocable actions. Reduced
+            approval turnaround from 3 days to under 4 hours, with email & Slack notifications.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-category="lwc" data-reveal data-delay="0">
+        <div class="project-thumb">
+          <span class="project-icon">📊</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag tag-lwc">LWC</span>
+            <span class="project-tag tag-api">REST API</span>
+          </div>
+          <div class="project-title">Analytics KPI Widget Suite</div>
+          <p class="project-desc">
+            A library of 8 reusable LWC KPI components (gauge, funnel, trend-line) powered by
+            Apex and connected via Platform Events for live data without page refresh.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card" data-category="apex" data-reveal data-delay="100">
+        <div class="project-thumb">
+          <span class="project-icon">🛡️</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag tag-apex">Apex</span>
+            <span class="project-tag tag-flow">Flow</span>
+          </div>
+          <div class="project-title">Territory & Permission Automation</div>
+          <p class="project-desc">
+            Rule-based territory assignment engine using Apex batch jobs and Flow triggers.
+            Handles 200K+ records overnight with full audit trail and conflict resolution.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card" data-category="integration" data-reveal data-delay="200">
+        <div class="project-thumb">
+          <span class="project-icon">📧</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag tag-integration">Integration</span>
+            <span class="project-tag tag-lwc">LWC</span>
+          </div>
+          <div class="project-title">Omnichannel Email Intelligence</div>
+          <p class="project-desc">
+            Einstein Email Insights integration with a custom LWC sidebar that surfaces
+            sentiment analysis, next-best-action recommendations, and draft auto-compose.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+<!-- ===================================================
+     CERTIFICATIONS SECTION
+===================================================== -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">Credentials</span>
+      <h2>Certifications</h2>
+      <p>Verified Salesforce credentials validating my expertise.</p>
+    </div>
+
+    <div class="certs-grid">
+
+      <!-- Cert 1 -->
+      <div class="cert-card" data-reveal data-delay="0">
+        <div class="cert-logo">☁️</div>
+        <div>
+          <div class="cert-name">Salesforce Certified Administrator</div>
+          <div class="cert-org">Salesforce · CRT-101</div>
+        </div>
+        <div class="cert-year">2024</div>
+        <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="cert-card" data-reveal data-delay="80">
+        <div class="cert-logo">⚡</div>
+        <div>
+          <div class="cert-name">Salesforce Certified AI Associate</div>
+          <div class="cert-org">Salesforce · AI</div>
+        </div>
+        <div class="cert-year">2024</div>
+        <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="cert-card" data-reveal data-delay="160">
+        <div class="cert-logo">🔧</div>
+        <div>
+          <div class="cert-name">ServiceMax Core Administrator</div>
+          <div class="cert-org">Salesforce · SVMX101</div>
+        </div>
+        <div class="cert-year">2024</div>
+        <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+      </div>
+
+      <!-- Cert 4 -->
+      <div class="cert-card" data-reveal data-delay="240">
+        <div class="cert-logo">🏗️</div>
+        <div>
+          <div class="cert-name">Salesforce Certified Platform App Builder</div>
+          <div class="cert-org">Salesforce · CRT-402</div>
+        </div>
+        <div class="cert-year">2025</div>
+        <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+      </div>
+    </div><!-- /certs-grid -->
+  </div>
+</section>
+
+<!-- ===================================================
+     CONTACT SECTION
+===================================================== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">Get In Touch</span>
+      <h2>Contact Me</h2>
+      <p>Available for freelance, consulting, or full-time roles.</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <!-- Left -->
+      <div class="contact-left" data-reveal="left">
+        <h2>Let's build something<br><span class="grad">remarkable together.</span></h2>
+        <p>
+          Whether you need a Salesforce implementation, a complex Apex solution,
+          or a polished Lightning component — I'm here to help. Reach out via any
+          channel below.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:nikhil.m2904@gmail.com" class="contact-link">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info">
+              <strong>Email</strong>
+              <span>nikhil.m2904@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--text-3);"></i>
+          </a>
+
+          <a href="tel:+917899030854" class="contact-link">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-info">
+              <strong>Phone</strong>
+              <span>+91 78990 30854</span>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--text-3);"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/nikhilm29/" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-info">
+              <strong>LinkedIn</strong>
+              <span>https://www.linkedin.com/in/nikhilm29/</span>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--text-3);"></i>
+          </a>
+
+          <a href="https://github.com/nikhilm2904" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-info">
+              <strong>GitHub</strong>
+              <span>https://github.com/nikhilm2904</span>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--text-3);"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right card -->
+      <div class="contact-right" data-reveal="right">
+        <span class="big-icon">📄</span>
+        <h3>Download My CV</h3>
+        <p>
+          Get a comprehensive overview of my Salesforce skills, project history,
+          certifications, and professional experience — all in one clean PDF.
+        </p>
+        <a href="resume.pdf" class="btn btn-primary" download style="justify-content:center;width:100%;margin-bottom:1rem;">
+          <i class="fas fa-download"></i> Download CV (PDF)
+        </a>
+        <a href="https://www.salesforce.com/trailblazer/nikhilraja29" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;width:100%;">
+          <i class="fab fa-salesforce"></i> View Trailhead Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-social">
+      <a href="https://github.com/nikhilm2904" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nikhilm29/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/Nikhil_raja29" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.salesforce.com/trailblazer/nikhilraja29" target="_blank" aria-label="Trailhead"><i class="fab fa-salesforce"></i></a>
+    </div>
+    <p class="footer-copy">
+      © <span id="year"></span> Nikhil M — Built with ♥ using pure HTML, CSS &amp; TypeScript
+    </p>
+  </div>
+</footer>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- ===== Scripts ===== -->
+<script src="animation.js"></script>
+<script src="script.js"></script>
+<script>
+  // Dynamic year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
