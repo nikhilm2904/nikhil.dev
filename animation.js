@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Apex Specialist",
                 "Lightning Web Components",
                 "Flow & Automation Expert",
-                "Platform Developer I",
+                "Full Stack Web Integration",
             ],
             typeSpeed: 75,
             deleteSpeed: 38,
